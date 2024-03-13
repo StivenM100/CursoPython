@@ -2,9 +2,9 @@
 # Estructuras de Control
 
 menu = """
-        ***************************************
-        *   MENU PRINCIPAL DE LA APLICACION   *                                                
-        ***************************************
+       ****************************************************
+       *        MENU PRINCIPAL DE LA APLICACION           * 
+       ****************************************************
 
         Elija la opcion del reto que desea ejecutar: 
         1000 : Hello World!
