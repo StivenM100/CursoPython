@@ -13,7 +13,11 @@ menu = """
         1003 : Suma 2 numeros
         1004 : Multiplicacion 2 numeros
         1005 :
-        
+        1006 :
+        1007 :
+        1008 :
+        1009 :
+        1010 : 
         
         1037 : 
         0 : Salir programa
@@ -55,6 +59,20 @@ while bandera:
                 
                 PROD = A * B
                 print(f"PROD = {PROD}")
+        elif opcion == 1005:
+                #Ejercicio 1005
+                print("")
+        elif opcion == 1010:
+                # Ejercicio 1010
+                valores_1 = input().split(" ")
+                valores_2 = input().split(" ")
+                
+                suma_total_p1 = float(valores_1[1]) * float(valores_1[2])
+                suma_total_p2 = float(valores_2[1]) * float(valores_2[2])
+                
+                suma_final = suma_total_p1 + suma_total_p2
+                
+                print(f"VALOR A PAGAR: R$ {suma_final:.2f}")
         else:
                 print("La opcion seleccionada no existe")
  
