@@ -20,7 +20,7 @@ menu = """"
         1049 : Animal
         1050 : DDD
         1051 : Impuestos
-        1052 : Mes
+        1052 : Mes 
         1059 : Números Pares
         1060 : Números Positivos
         1061 : Tiempo Del Evento
