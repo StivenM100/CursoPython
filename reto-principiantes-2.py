@@ -7,31 +7,31 @@ menu = """"
        ****************************************************
 
         Elija la opcion del reto que desea ejecutar: 
-        1000 : Hello World!
-        1001 : Suma Simple
-        1002 : Area de un Circulo   
-        1003 : Suma 2 numeros
-        1004 : Multiplicacion 2 numeros
-        1005 : Promedio 1
-        1006 : Promedio 2
-        1007 : Diferencia
-        1008 : Salario
-        1009 : Salario con Bonus
-        1010 : Cálculo Simple
-        1011 : Esfera
-        1012 : Área
-        1013 : El Mayor
-        1014 : Consumo
-        1015 : Distancia Entre dos Puntos
-        1016 : Distancia
-        1017 : Combustible Gastado
-        1018 : Billetes
-        1019 : Conversión de Tiempo
-        1020 : Edad en Días
-        1021 : Billetes y Monedas
-        1035 : Prueba de Selección 1
-        1036 : Fórmula de Bhaskara
-        1037 : Intervalo
+        1038 : Snack
+        1040 : Promedio 3
+        1041 : Coordenadas de un Punto
+        1042 : Clasificación Simple
+        1043 : Triángulo
+        1044 : Múltiplos
+        1045 : Tipos de Triángulos
+        1046 : Tiempo de Juego
+        1047 : Tiempo de Juego con Minutos
+        1048 : Incremento Salarial
+        1049 : Animal
+        1050 : DDD
+        1051 : Impuestos
+        1052 : Mes
+        1059 : Números Pares
+        1060 : Números Positivos
+        1061 : Tiempo Del Evento
+        1064 : Positivos y Promedio
+        1065 : Pares Entre Cinco Números
+        1066 : Par, Impar, Postivo y Negativo
+        1067 : Números Impares
+        1070 : Seis Números Impares
+        1071 : Suma de Números Consecutivos Impares I
+        1072 : Intervalo 2
+        1073 : Cuadrado de un Par
         0 : Salir programa
 """
 bandera = True
