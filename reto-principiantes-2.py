@@ -42,9 +42,37 @@ while bandera:
     if opcion == 0:
         print("Hasta pronto!!")
         break
-    elif opcion == 1000:
-        # Ejercicio 1000
-        print("Hello World!")
+    elif opcion == 1038:
+        # Ejercicio 1038
+        valores = input("Ingrese el código X y la cantidad Y del producto 'X Y' \n").split(" ")
+        precio = [0,4,4.5,5,2,1.5]
+        total = precio[int(valores[0])] * int(valores[1])
+        print(f"Total: R$ {total:.2f}")
+    elif opcion == 1040:
+        # Ejercicio 1040
+        notas = input("Ingrese notas: [N1 N2 N3 N4] \n").split(" ")
+        N1 = float(notas[0])
+        N2 = float(notas[1])
+        N3 = float(notas[2])
+        N4 = float(notas[3])
+
+        media = (N1*2+N2*3+N3*4+N4*1)/(2+3+4+1)
+        print(f"Media: {media:.1f}")
+
+        if media >= 7:
+            print("Aluno aprovado.")
+        elif media < 5:
+            print("Aluno reprovado.")
+        elif media >= 5 and media <= 6.9:
+            print("Aluno em exame.")
+            examen = float(input("Ingrese nota de examen: \n"))
+            print(f"Nota do exame: {examen:.1f}")
+            nota_final = (media + examen) / 2
+            if nota_final >= 5:
+                print("Aluno aprovado.")
+            elif nota_final <= 4.9:
+                print("Aluno reprovado.")
+            print(f"Media final: {nota_final:.1f}")
     else:
         print("La opcion seleccionada no existe")
     
