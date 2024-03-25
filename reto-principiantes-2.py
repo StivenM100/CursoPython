@@ -73,6 +73,57 @@ while bandera:
             elif nota_final <= 4.9:
                 print("Aluno reprovado.")
             print(f"Media final: {nota_final:.1f}")
+    elif opcion == 1041:
+        # Ejercicio 1041
+        punto = input("Ingrese coordenada [X Y] \n").split(" ")
+        X = float(punto[0])
+        Y = float(punto[1])
+
+        if X == 0 and Y == 0:
+            print("Origem")
+        elif X == 0 and Y != 0:
+            print("Eixo Y")
+        elif X != 0 and Y == 0:
+            print("Eixo X")
+        elif X > 0 and Y > 0:
+            print("Q1")
+        elif X > 0 and Y < 0:
+            print("Q4")
+        elif X < 0 and Y > 0:
+            print("Q2")
+        elif X < 0 and Y < 0:
+            print("Q3")
+    elif opcion == 1042:
+        # Ejercicio 1042
+        numeros = input("Ingrese tres numeros enteros [A B C] \n").split(" ")
+        A = int(numeros[0])
+        B = int(numeros[1])
+        C = int(numeros[2])
+        lista = [A, B, C]
+        lista.sort()
+        print(f"{lista[0]}\n{lista[1]}\n{lista[2]}\n")
+        print(f"{A}\n{B}\n{C}")
+    elif opcion == 1043:
+        # Ejercicio 1043
+        valores = input("Ingrese valores [A B C] \n").split(" ")
+        a = float(valores[0])
+        b = float(valores[1])
+        c = float(valores[2])
+
+        if a+b>c and b+c>a and c+a>b:
+            print(f"Perimetro = {(a+b+c):.1f}")
+        else:
+            print(f"Area = {(0.5*(a+b)*c):.1f}")
+    elif opcion == 1044:
+        # Ejercicio 1044
+        valores = input("Ingrese valores para conocer si son multiplos o no [A B] \n").split(" ")
+        A = int(valores[0])
+        B = int(valores[1])
+
+        if A%B == 0 or B%A == 0:
+            print("Sao Multiplos")
+        else:
+            print("Nao sao Multiplos")
     else:
         print("La opcion seleccionada no existe")
     
