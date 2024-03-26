@@ -124,6 +124,78 @@ while bandera:
             print("Sao Multiplos")
         else:
             print("Nao sao Multiplos")
+    elif opcion == 1045:
+        # Ejercicio 1045
+        lados = input("Ingrese los lados del triangulo [A B C] \n").split(" ")
+        lado1 = float(lados[0])
+        lado2 = float(lados[1])
+        lado3 = float(lados[2])
+        lista = [lado1, lado2, lado3]
+        lista.sort(reverse=True)
+        A = lista[0]
+        B = lista[1]
+        C = lista[2]
+
+        if A >= (B+C):
+            print("NAO FORMA TRIANGULO")
+        elif A**2 == (B**2+C**2):
+            print("TRIANGULO RETANGULO")
+        elif A**2 > (B**2+C**2):
+            print("TRIANGULO OBTUSANGULO")
+        elif A**2 < (B**2+C**2):
+            print("TRIANGULO ACUTANGULO")
+            
+        if A == B == C:
+            print("TRIANGULO EQUILATERO")
+        elif A == B or B == C:
+            print("TRIANGULO ISOSCELES")
+    elif opcion == 1046:
+        # Ejercicio 1046
+        tiempo = input("Ingrese tiempo del comienzo 'A' y el tiempo del final del juego 'B': [A B] \n").split(" ")
+        a = int(tiempo[0])
+        b = int(tiempo[1])
+
+        if a < b:
+            print(f"O JOGO DUROU {b-a} HORA(S)")
+        else:
+            print(f"O JOGO DUROU {b+24-a} HORA(S)")
+    elif opcion == 1047:
+        # Ejercicio 1047
+        tiempo = input("Ingrese datos del juego: [hora inicial, minuto inicial, hora final, minuto final] \n").split(" ")
+        a = int(tiempo[0])
+        b = int(tiempo[1])
+        c = int(tiempo[2])
+        d = int(tiempo[3])
+
+        inicio = a * 60 + b
+        fin = c * 60 + d
+        diferencia = fin - inicio
+
+        if diferencia <= 0:
+            diferencia = diferencia + 24 * 60
+
+        hora = diferencia // 60
+        minutos = diferencia % 60
+
+        print(f"O JOGO DUROU {hora} HORA(S) E {minutos} MINUTO(S)")
+    elif opcion == 1048:
+        salario = float(input("Ingrese salario \n"))
+
+        if salario <= 400:
+            porcentaje = 15
+        elif salario <= 800:
+            porcentaje = 12
+        elif salario <= 1200:
+            porcentaje = 10
+        elif salario <= 2000:
+            porcentaje = 7
+        else:
+            porcentaje = 4
+
+        aumento = salario * porcentaje / 100
+        nuevo = salario + aumento
+
+        print(f'Novo salario: {nuevo:.2f}\nReajuste ganho: {aumento:.2f}\nEm percentual: {porcentaje} %')
     else:
         print("La opcion seleccionada no existe")
     
